@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Conference October 2023</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+        <li><a id="toggleMenu">&equiv;</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="w01-task.html">W1 Task</a></li>
+        <li><a href="w03-task.html">W3 Task</a></li>
+        <li><a href="w04-task.html">W4 Task</a></li>
+        <li><a href="w05-task.html">W5 Task</a></li>
+        <li><a href="final.html" class="active">Final Project</a></li>
+    </ul>
+    
+  </nav>
+  <main id="gridly">
+    <h1>General Conference October 2023</h1>
+    <h2>Javascript Final Project</h2>
+
+    <select id="sortIt" title="Choose a data filter.">
+      <option value="" disabled selected>Sort talks</option>
+      <option value="satmorn">Saturday Morning</option>
+      <option value="sataft">Saturday Afternoon</option>
+      <option value="sateve">Saturday Evening</option>
+      <option value="sunmorn">Sunday Morning</option>
+      <option value="sunaft">Sunday Afternoon</option>
+      <option value="speaker">Speaker</option>
+      <option value="all">All Talks</option>
+    </select>
+
+    <h1 id="filtertitle"></h1>
+    <div id="talks">
+        
+    </div>
+  </main>
+
+
+  <footer>
+    &copy;<span id="year"></span> | Final Project | CSE 121b
+  </footer>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="scripts/final.js"></script>
+</body>
+
+</html>
